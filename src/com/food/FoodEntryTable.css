@@ -15,7 +15,7 @@
   font-size: 14px;
 }
 table {
-  border-spacing: 0;
+  border-spacing: 0 10px;
   margin: 0 auto;
 }
 
@@ -30,13 +30,29 @@ th span {
 
 table tr td {
   text-align: center;
+}
+
+tbody tr:nth-child(odd).foodentry{
+  background: #d2d2d2;
+  color: #000;
+}
+
+/* no background for delete button area*/
+tbody tr:nth-child(odd).foodentry td:nth-child(6){
   background: #fff;
+  color: #d2d2d2;
+}
+
+tbody tr:nth-child(even).foodentry{
+  background: #fff;
+  color: #000;
 }
 
 .delete-button {
   border: 0;
   color: #d2d2d2;
   font-size: 12px;
+  padding-left: 15px;
 }
 
 .delete-button:hover {

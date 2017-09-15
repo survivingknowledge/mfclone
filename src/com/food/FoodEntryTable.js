@@ -16,7 +16,7 @@ const FoodEntryTable = ({ foods, goal, deleteFood }) => {
 
   const myfoods = foods.map((food, i) => {
     return (
-      <tr key={i}>
+      <tr key={i} className='foodentry'>
         <td className='food-name'>{food.name}</td>
         <td>{food.calories}</td>
         <td>{food.carbs}</td>
@@ -41,9 +41,6 @@ const FoodEntryTable = ({ foods, goal, deleteFood }) => {
         </thead>
         <tbody>
           {myfoods}
-          <tr>
-            <td>&nbsp;</td>
-          </tr>
           <tr>
             <td>Totals</td>
             <td>{totals.calories}</td>
