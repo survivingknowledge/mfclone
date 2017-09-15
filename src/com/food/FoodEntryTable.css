@@ -1,9 +1,7 @@
 .food-entry-table {
   position: relative;
   width: 960px;
-  min-height: 200px;
   background: #fff;
-  border: 1px solid #d2d2d2;
   margin: 0 auto;
   text-align: left;
   border-radius: 6px;
@@ -18,6 +16,7 @@
 }
 table {
   border-spacing: 0;
+  margin: 0 auto;
 }
 
 table th {
@@ -34,12 +33,12 @@ table tr td {
   background: #fff;
 }
 
-table tr td:last-child {
+.delete-button {
   border: 0;
   color: #d2d2d2;
   font-size: 12px;
 }
 
-table tr td:last-child:hover {
+.delete-button:hover {
   color: red;
 }
