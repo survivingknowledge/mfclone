@@ -1,0 +1,48 @@
+.date-leftarrow {
+  float: left;
+  width: 35px;
+  height: 35px;
+  background: #00548f;
+  color: #fff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  outline: none;
+  border-bottom: 0;
+  border-top: 0;
+  border-right: 0;
+}
+
+.date {
+  float: left;
+  padding: 0 10px;
+  height: 35px;
+  width: 250px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.date-rightarrow {
+  float: left;
+  width: 35px;
+  height: 35px;
+  background: #00548f;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  outline: none;
+  border-bottom: 0;
+  border-top: 0;
+  border-left: 0;
+}
+
+.date-selector {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.date-selector::after {
+  content: '';
+  display: table;
+  clear: both;
+}
