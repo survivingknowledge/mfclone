@@ -9,15 +9,15 @@ class FoodLogEntry extends Component {
 
   state = {
     current_date: Date.now(),
+    user: {
+      goal: {
+        calories: 3100,
+        carbs: 388,
+        fat: 103,
+        protein: 155,
+      }
+    },
     food_entries: [
-      {
-        id: Math.floor(Math.random() * 1000),
-        name: 'Random Food' + Math.random() * 100,
-        calories: 587,
-        carbs: 14,
-        fat: 8,
-        protein: 2,
-      },
       {
         id: Math.floor(Math.random() * 1000),
         name: 'Random Food' + Math.random() * 100,
@@ -61,7 +61,7 @@ class FoodLogEntry extends Component {
         <div>
           <FoodDateSelector current_date={this.state.current_date} nextDay={this.selectNextDay} prevDay={this.selectPrevDay} />
         </div>
-        <FoodEntryTable foods={this.state.food_entries} deleteFood={this.deleteFoodEntry}/>
+        <FoodEntryTable foods={this.state.food_entries} goal={this.state.user.goal} deleteFood={this.deleteFoodEntry}/>
       </div>
     );
   }
