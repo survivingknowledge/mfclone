@@ -1,0 +1,45 @@
+.food-entry-table {
+  position: relative;
+  width: 960px;
+  min-height: 200px;
+  background: #fff;
+  border: 1px solid #d2d2d2;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.food-name {
+  width: 350px;
+  text-align: left;
+  font-size: 14px;
+}
+table {
+  border-spacing: 0;
+}
+
+table th {
+  padding: 5px 15px;
+  text-align: center;
+}
+
+th span {
+  font-size: 12px;
+}
+
+table tr td {
+  text-align: center;
+  background: #fff;
+}
+
+table tr td:last-child {
+  border: 0;
+  color: #d2d2d2;
+  font-size: 12px;
+}
+
+table tr td:last-child:hover {
+  color: red;
+}
